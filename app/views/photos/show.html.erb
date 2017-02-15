@@ -5,4 +5,13 @@
   <%= @photo.description %>
 </p>
 
+<hr>
 <%= render 'comments/form' %>
+
+
+<% @photo.comments.each do |comment| %>
+  <p>
+    <%= comment.content %>
+    <%= User.find(comment.user_id).email %>
+  </p>
+<% end %>

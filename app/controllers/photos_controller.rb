@@ -3,28 +3,29 @@ class PhotosController < ApplicationController
     @photos = Photo.all
   end
 
+  def show
+    @photo = Photo.find(params[:id])
+    @comment = Comment.new
+  end
+
   def new
     @user = current_user
-    @photo = @user.photos.new
+    @photo = Photo.new
   end
 
   def create
     @user = current_user
-    @photo = @user.photos.new(photos_params)
+    @photo = @user.photos.new(photo_params)
     if @photo.save
       redirect_to photo_path(@photo)
     else
-      render :new_user_photo
+      render :new
     end
   end
 
-  def show
-    @photo = Photo.find(params[:id])
-    @comment = @photo.comments.new
-  end
 
   private
-  def photos_params
+  def photo_params
   params.require(:photo).permit(:image, :description, :user_id)
   end
 end
