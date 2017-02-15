@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   end
 
   resources :photos, :only => [:show, :index] do
-    resources :comments
+    resources :comments, :except => [:show]
   end
 end

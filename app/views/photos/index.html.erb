@@ -1,10 +1,21 @@
+<div class="row">
 <% if @photos.length > 0 %>
   <h1>All photos</h1>
   <% @photos.each do |photo|  %>
-    <%= image_tag photo.image %>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <%= image_tag photo.image %>
+        <div class="caption">
+          <h3>Description will go here soon</h3>
+          <small>By <%= User.find(photo.user_id).email %></small>
+          <p><a href="#" class="btn btn-primary" role="button">like</a> <a href="#" class="btn btn-default" role="button">share</a></p>
+        </div>
+      </div>
+    </div>
   <% end %>
 <% else %>
   <p>
     You have no photos
   </p>
 <% end %>
+</div>
