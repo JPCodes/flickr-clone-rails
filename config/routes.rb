@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :photos, :except => [:edit, :update]
   end
 
-  resources :photos, :only => [:show] do
+  resources :photos, :only => [:show, :index] do
     resources :comments
   end
 end

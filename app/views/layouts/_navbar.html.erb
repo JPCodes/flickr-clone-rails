@@ -5,7 +5,10 @@
 </div>
   Logged in as <strong><%= current_user.email %></strong>.
   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %> |
+  <%= link_to 'See your Photos', user_path(current_user) %> |
+  <%= link_to 'Upload a Photo', new_user_photo_path(current_user) %> |
+  <%= link_to 'See community uploads', photos_path %>
 <% else %>
   <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>

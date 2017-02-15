@@ -1,0 +1,10 @@
+<% if @photos.length > 0 %>
+  <h1>All photos</h1>
+  <% @photos.each do |photo|  %>
+    <%= image_tag photo.image %>
+  <% end %>
+<% else %>
+  <p>
+    You have no photos
+  </p>
+<% end %>

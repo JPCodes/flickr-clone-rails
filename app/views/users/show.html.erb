@@ -1,0 +1,10 @@
+<% if current_user.photos.length > 0 %>
+  <h1>Your photos</h1>
+  <% current_user.photos.each do |photo|  %>
+    <%= image_tag photo.image %>
+  <% end %>
+<% else %>
+  <p>
+    You have no photos
+  </p>
+<% end %>
