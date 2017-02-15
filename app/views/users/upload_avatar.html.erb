@@ -1,7 +1,9 @@
+<%= render 'layouts/errors', object: @user %>
+
 <%= form_for(@user, multipart: true) do |f| %>
   <div class="field">
     <%= f.label :avatar %>
-    <%= f.file_field :avatar %>
+    <%= f.file_field :avatar, required: true %>
   </div>
   <div class="actions">
     <%= f.submit 'Upload' %>

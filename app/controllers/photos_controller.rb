@@ -20,10 +20,11 @@ class PhotosController < ApplicationController
 
   def show
     @photo = Photo.find(params[:id])
+    @comment = @photo.comments.new
   end
 
   private
   def photos_params
-  params.require(:photo).permit(:image, :user_id)
+  params.require(:photo).permit(:image, :description, :user_id)
   end
 end

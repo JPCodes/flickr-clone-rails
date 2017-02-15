@@ -1,0 +1,7 @@
+<%= render 'layouts/errors', object: @comment %>
+<%= form_for [@photo, @comment] do |f| %>
+  <%= f.hidden_field :user_id, :value => current_user %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>
