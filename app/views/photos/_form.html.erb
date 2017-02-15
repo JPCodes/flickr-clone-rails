@@ -1,0 +1,10 @@
+<%= form_for([@user, @photo], multipart: true) do |f| %>
+  <div class="field">
+    <%= f.hidden_field :user_id, :value => current_user.id %>
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Upload' %>
+  </div>
+<% end %>
