@@ -1,5 +1,7 @@
 FactoryGirl.define do
   factory(:user) do
+    id(1)
+    name('anon')
     email('anonymous@site.com')
     password('anonymous')
   end

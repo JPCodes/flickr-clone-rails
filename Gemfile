@@ -28,6 +28,7 @@ group :development, :test do
   gem 'pry'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
+  gem 'database_cleaner'
   gem 'simplecov', require: false
 end
 
