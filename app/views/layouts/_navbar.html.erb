@@ -19,6 +19,7 @@
         <li><%= link_to 'See your Photos', user_path(current_user) %></li>
         <li><%= link_to 'Upload a Photo', new_user_photo_path(current_user) %></li>
         <li><%= link_to 'See community uploads', photos_path %></li>
+        <li>hey<%= current_user.name %>hey</li>
       </ul>
       <% end %>
       <ul class="nav navbar-nav navbar-right">
