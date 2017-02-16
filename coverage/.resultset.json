@@ -2,7 +2,31 @@
   "RSpec": {
     "coverage": {
       "/Users/Guest/Desktop/flickr-clone-rails/spec/features/add_photo_pages_spec.rb": [
-        1
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
       ],
       "/Users/Guest/Desktop/flickr-clone-rails/spec/rails_helper.rb": [
         1,
@@ -87,7 +111,6 @@
         1,
         null,
         1,
-        null,
         null
       ],
       "/Users/Guest/Desktop/flickr-clone-rails/config/initializers/application_controller_renderer.rb": [
@@ -517,13 +540,13 @@
         null,
         1,
         1,
-        7,
+        11,
         2,
         null,
-        7,
-        1,
+        11,
+        3,
         null,
-        7,
+        11,
         0,
         null,
         null,
@@ -582,8 +605,8 @@
         null,
         null,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
         null,
         1,
@@ -600,8 +623,8 @@
         null,
         null,
         1,
-        0,
-        0,
+        2,
+        2,
         null,
         null,
         1,
@@ -611,19 +634,19 @@
         null,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
+        2,
+        2,
+        2,
+        1,
         null,
-        0,
+        1,
         null,
         null,
         null,
         null,
         1,
         1,
-        0,
+        2,
         null,
         null
       ],
@@ -692,7 +715,7 @@
         1,
         1,
         1,
-        1,
+        3,
         1,
         null,
         null,
@@ -700,6 +723,7 @@
         1,
         1,
         1,
+        null,
         null,
         null,
         1,
@@ -709,7 +733,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/flickr-clone-rails/spec/features/create_user_spec.rb": [
+      "/Users/Guest/Desktop/flickr-clone-rails/spec/features/create_user_pages_spec.rb": [
         1,
         null,
         1,
@@ -726,6 +750,7 @@
         1,
         1,
         1,
+        null,
         null,
         1,
         1,
@@ -768,6 +793,6 @@
         null
       ]
     },
-    "timestamp": 1487273847
+    "timestamp": 1487284135
   }
 }

@@ -15,6 +15,7 @@ describe 'the create a user process' do
     click_on 'Log in'
     expect(page).to have_content('Jon Doe')
   end
+  
   it 'will fail to create a user' do
     visit new_user_registration_path
     click_on 'Sign Up'

@@ -9,6 +9,7 @@ FactoryGirl.define do
     user
     description('Cool Pic')
     image Rack::Test::UploadedFile.new("#{Rails.root}/spec/fixtures/images/test_photo.jpg", "image/jpg")
+    # File.new("#{Rails.root}/spec/support/fixtures/image.jpg")
   end
 
   factory :comment, class: Comment do
