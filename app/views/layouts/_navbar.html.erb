@@ -19,7 +19,6 @@
         <li><%= link_to 'See your Photos', user_path(current_user) %></li>
         <li><%= link_to 'Upload a Photo', new_user_photo_path(current_user) %></li>
         <li><%= link_to 'See community uploads', photos_path %></li>
-        <li>hey<%= current_user.name %>hey</li>
       </ul>
       <% end %>
       <ul class="nav navbar-nav navbar-right">
@@ -27,7 +26,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <% if user_signed_in? %>
-            <li><%= link_to 'Edit profile', edit_user_registration_path%></li>
+            <li><%= link_to ('Edit profile: '+current_user.name), edit_user_registration_path%></li>
             <li><%= link_to 'Edit Avatar Photo', user_upload_path(current_user) %></li>
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
             <% else %>
