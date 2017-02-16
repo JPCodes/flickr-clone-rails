@@ -1,22 +1,8 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/flickr-clone-rails/spec/models/comment_spec.rb": [
-        1,
-        null,
-        1,
-        2,
-        2,
-        2,
-        2,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
+      "/Users/Guest/Desktop/flickr-clone-rails/spec/features/add_photo_pages_spec.rb": [
+        1
       ],
       "/Users/Guest/Desktop/flickr-clone-rails/spec/rails_helper.rb": [
         1,
@@ -531,13 +517,13 @@
         null,
         1,
         1,
-        0,
-        0,
+        7,
+        2,
         null,
-        0,
-        0,
+        7,
+        1,
         null,
-        0,
+        7,
         0,
         null,
         null,
@@ -706,12 +692,6 @@
         1,
         1,
         1,
-        5,
-        1,
-        null,
-        null,
-        1,
-        1,
         1,
         1,
         null,
@@ -721,6 +701,47 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/flickr-clone-rails/spec/features/create_user_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/flickr-clone-rails/spec/models/comment_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
         null
       ],
       "/Users/Guest/Desktop/flickr-clone-rails/spec/models/photo_spec.rb": [
@@ -733,13 +754,6 @@
         2,
         2,
         2,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
         null
       ],
       "/Users/Guest/Desktop/flickr-clone-rails/spec/models/user_spec.rb": [
@@ -751,16 +765,9 @@
         2,
         2,
         2,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
         null
       ]
     },
-    "timestamp": 1487270329
+    "timestamp": 1487273847
   }
 }
