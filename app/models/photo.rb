@@ -1,6 +1,7 @@
 class Photo < ActiveRecord::Base
   belongs_to :user
   has_many :comments
+  has_many :tags
   validates :description, :image, :presence => true
 
   has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "/images/:style/missing.png"

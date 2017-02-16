@@ -9,5 +9,6 @@ Rails.application.routes.draw do
 
   resources :photos, :except => [:new, :create] do
     resources :comments, :except => [:show]
+    resources :tags, :only => [:new, :create, :destroy]
   end
 end
