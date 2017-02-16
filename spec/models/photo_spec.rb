@@ -10,8 +10,8 @@ describe Photo do
 
   it 'validates Factory Girl setup for photos' do
     photo = FactoryGirl.build(:photo)
-    puts 'hey ',photo.image
     photo.description.should eq 'Cool Pic'
-    photo.user_id.should eq 1
+    photo.image_file_name.should eq 'test_photo.jpg'
+    photo.user_id.integer?.should eq true
   end
 end

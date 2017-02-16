@@ -1,14 +1,19 @@
 FactoryGirl.define do
-  factory(:user) do
-    id(1)
+  factory :user, class: User do
     name('anon')
-    email('anonymous@site.com')
+    sequence(:email){|n| "user#{n}@factory.com" }
     password('anonymous')
   end
 
-  factory(:photo) do
+  factory :photo, class: Photo do
+    user
     description('Cool Pic')
-    user_id(1)
     image Rack::Test::UploadedFile.new("#{Rails.root}/spec/fixtures/images/test_photo.jpg", "image/jpg")
+  end
+
+  factory :comment, class: Comment do
+    user
+    photo
+    content('something')
   end
 end

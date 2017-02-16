@@ -9,6 +9,13 @@
         2,
         2,
         2,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/Guest/Desktop/flickr-clone-rails/spec/rails_helper.rb": [
@@ -699,6 +706,11 @@
         1,
         1,
         1,
+        5,
+        1,
+        null,
+        null,
+        1,
         1,
         1,
         1,
@@ -749,6 +761,6 @@
         null
       ]
     },
-    "timestamp": 1487268466
+    "timestamp": 1487270329
   }
 }
