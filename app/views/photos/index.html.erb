@@ -7,8 +7,9 @@
         <%= image_tag photo.image %>
         <div class="caption">
           <h3><%= link_to photo.description, photo_path(photo) %></h3>
-          <small>By <%= User.find(photo.user_id).email %></small>
-          <p><a href="#" class="btn btn-primary" role="button">like</a> <a href="#" class="btn btn-default" role="button">share</a></p>
+          <small>By <%= User.find(photo.user_id).email %></small><br>
+          <small>Likes: <%= photo.votes_for.size %> </small>
+          <p><%= link_to "Like", :liked_photo => photo.id%> <a href="#" class="btn btn-default" role="button">share</a></p>
           <% if current_user.id == photo.user_id %>
           <p> <%= link_to 'Delete', photo_path(photo), :data => {:confirm => "You sure?", :method => "delete"}  %></p>
             <p> <%= link_to 'Edit', edit_photo_path(photo) %></p>

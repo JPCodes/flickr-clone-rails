@@ -1,6 +1,11 @@
 class PhotosController < ApplicationController
   def index
     @photos = Photo.all
+    p "no!!!!", current_user
+    if params[:liked_photo]
+      @photo = Photo.find_by_id(params[:liked_photo])
+      @photo.liked_by current_user
+    end
   end
 
   def show
@@ -43,6 +48,12 @@ class PhotosController < ApplicationController
     end
   end
 
+  def likeable
+    p "no!!!!"
+    @photo = Photo.find_by_id(params[:photo_id])
+    @photo.liked_by current_user
+    redirect_to photos_path
+  end
 
   private
   def photo_params
