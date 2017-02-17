@@ -6,9 +6,15 @@
 </p>
 
 <hr>
+
+<%= render 'tags/form' %>
+<p>
+<% @photo.tags.each do |tag| %>
+  <%= link_to tag.snippet, tag_path(tag) %> | 
+<% end %>
+</p>
+
 <%= render 'comments/form' %>
-
-
 <% @photo.comments.each do |comment| %>
   <p>
     <%= comment.content %>

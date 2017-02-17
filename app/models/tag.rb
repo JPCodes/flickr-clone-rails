@@ -5,8 +5,8 @@ class Tag < ActiveRecord::Base
   def find_by_tag
     photos_match = []
     Photo.all.each do |photo|
-      if photo.tags.include?(self.id)
-        found_photos.push(photo)
+      if photo.tags.include?(Tag.find(self.id))
+        photos_match.push(photo)
       end
     end
     photos_match

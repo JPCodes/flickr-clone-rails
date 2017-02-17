@@ -31,7 +31,8 @@ ActiveRecord::Schema.define(version: 20170216233102) do
   end
 
   create_table "tags", force: :cascade do |t|
-    t.string "snippet"
+    t.string  "snippet"
+    t.integer "photo_id"
   end
 
   create_table "users", force: :cascade do |t|

@@ -1,0 +1,7 @@
+<%= render 'layouts/errors', object: @tag %>
+<%= form_for [@photo, @tag] do |f| %>
+  <%= f.hidden_field :user_id, :value => @photo.id %>
+  <%= f.label :snippet %>
+  <%= f.text_field :snippet %>
+  <%= f.submit %>
+<% end %>

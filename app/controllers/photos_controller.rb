@@ -6,10 +6,11 @@ class PhotosController < ApplicationController
   def show
     @photo = Photo.find(params[:id])
     @comment = Comment.new
+    @tag = Tag.new
   end
 
   def edit
-      @photo = Photo.find(params[:id])
+    @photo = Photo.find(params[:id])
   end
 
   def update
