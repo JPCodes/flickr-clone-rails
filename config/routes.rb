@@ -11,4 +11,6 @@ Rails.application.routes.draw do
     resources :comments, :except => [:show]
     resources :tags, :only => [:new, :create, :destroy]
   end
+
+  resources :tags, :only => [:index, :show]
 end
