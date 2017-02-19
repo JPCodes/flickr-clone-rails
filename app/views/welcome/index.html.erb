@@ -1,1 +1,10 @@
-
+<h1>Welcome</h1>
+<% if !user_signed_in? %>
+<p>
+  Sign in or Sign up under the profile dropdown in the navigation menu
+</p>
+<% else %>
+<p>
+  To begin, click an option on the menu
+</p>
+<% end %>
